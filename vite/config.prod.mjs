@@ -54,8 +54,12 @@ export default defineConfig({
     ],
     logLevel: 'warning',
     build: {
+        // Disable filename hashing to avoid content corruption issues on GitHub Pages
         rollupOptions: {
             output: {
+                entryFileNames: 'assets/[name].js',
+                chunkFileNames: 'assets/[name].js',
+                assetFileNames: 'assets/[name].[ext]',
                 manualChunks: {
                     phaser: ['phaser']
                 }
