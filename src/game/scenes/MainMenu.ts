@@ -6,6 +6,7 @@ export class MainMenu extends Scene
 {
     background: GameObjects.Image;
     title: GameObjects.Text;
+    logo: GameObjects.Image;
 
     constructor ()
     {
@@ -16,14 +17,14 @@ export class MainMenu extends Scene
     {
         this.background = this.add.image(512, 384, 'background');
 
-        this.title = this.add.text(512, 384, 'Warlord Mendicant', {
-            fontFamily: 'Arial Black', fontSize: 48, color: '#ffffff',
-            stroke: '#000000', strokeThickness: 8,
-            align: 'center'
-        }).setOrigin(0.5).setDepth(100);
+        // Add the game logo
+        this.logo = this.add.image(512, 300, 'logo')
+            .setOrigin(0.5)
+            .setScale(0.5) // Scale down if needed
+            .setDepth(100);
 
-        // Add a "Play" button
-        const playButton = this.add.text(512, 484, 'Play Game', {
+        // Add a "Play" button - adjust position to account for logo
+        const playButton = this.add.text(512, 620, 'Play Game', {
             fontFamily: 'Arial Black', fontSize: 32, color: '#ffffff',
             stroke: '#000000', strokeThickness: 6,
             align: 'center'

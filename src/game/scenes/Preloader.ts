@@ -32,6 +32,9 @@ export class Preloader extends Scene
         //  Load the assets for the game
         this.load.setPath('assets');
         
+        // Load logo image
+        this.load.image('logo', 'logo.jpg');
+        
         // Load unit assets for the real-time tactics game
         this.load.image('archer', 'units/archer.png');
         this.load.image('infantry-heavy', 'units/infantry heavy.png');
