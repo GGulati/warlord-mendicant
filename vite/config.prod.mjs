@@ -32,7 +32,7 @@ const getBase = () => {
             // Extract the path portion for base
             const url = new URL(homepage);
             // Return the pathname including trailing slash
-            return '/' + url.pathname; 
+            return url.pathname; 
         }
     } catch (e) {
         console.warn('Could not determine base path from package.json:', e);
