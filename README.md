@@ -4,6 +4,9 @@ Warlord Mendicant is a real-time tactics game inspired by Total War: Warhammer, 
 
 https://ggulati.github.io/warlord-mendicant/
 
+![Warlord Mendicant Logo](public/assets/logo.jpg)
+
+
 ## Game Features
 
 - **Real-time tactical combat**: Control multiple units simultaneously in a fast-paced environment
