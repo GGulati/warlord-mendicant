@@ -4,6 +4,7 @@
     "version": "0.0.1",
     "license": "MIT",
     "licenseUrl": "http://www.opensource.org/licenses/mit-license.php",
+    "homepage": "https://ggulati.github.io/Warlord-Mendicant/",
     "scripts": {
         "dev": "vite --config vite/config.dev.mjs",
         "build": "vite build --config vite/config.prod.mjs",
